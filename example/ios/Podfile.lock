@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - HealthProduct (1.1.9)
+  - plugin_heath_product (0.0.1):
+    - Flutter
+    - HealthProduct
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - plugin_heath_product (from `.symlinks/plugins/plugin_heath_product/ios`)
+
+SPEC REPOS:
+  trunk:
+    - HealthProduct
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  plugin_heath_product:
+    :path: ".symlinks/plugins/plugin_heath_product/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  HealthProduct: e9c6d6d5a361671ed133be151e4ac36b2096938d
+  plugin_heath_product: d95bb63039860cfb15f42e455c670332b59c6140
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.0
