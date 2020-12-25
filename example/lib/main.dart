@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
       _platformVersion = platformVersion;
     });
   }
-  
+
   void openPage() async {
     await PluginHeathProduct.openPage;
   }

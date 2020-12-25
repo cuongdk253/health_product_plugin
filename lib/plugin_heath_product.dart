@@ -1,4 +1,3 @@
-
 import 'dart:async';
 
 import 'package:flutter/services.dart';
@@ -12,8 +11,14 @@ class PluginHeathProduct {
     return version;
   }
 
-  static Future<dynamic> get openPage async {
-    await _channel.invokeMethod('openPage');
+  static Future<Null> showMyToast(String msg) async {
+    Map<String, dynamic> args = {"msg": msg};
+    await _channel.invokeMethod('showToast', args);
+    return null;
   }
 
+  static Future<Null> get openPage async {
+    await _channel.invokeMethod('openPage');
+    return null;
+  }
 }

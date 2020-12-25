@@ -16,6 +16,7 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -29,5 +30,10 @@ android {
     }
     lintOptions {
         disable 'InvalidPackage'
+    }
+    dependencies {
+        implementation 'com.github.vietvuong1994:MyToast:1.0.0.3'
+        implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+
     }
 }
