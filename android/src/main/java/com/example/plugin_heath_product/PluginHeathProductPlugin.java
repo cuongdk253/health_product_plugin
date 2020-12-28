@@ -1,10 +1,14 @@
 package com.example.plugin_heath_product;
 
+import android.app.Activity;
+
 import androidx.annotation.NonNull;
 import com.example.mytoast.MyToast;
 
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.embedding.engine.plugins.activity.ActivityAware;
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
@@ -18,6 +22,7 @@ public class PluginHeathProductPlugin implements FlutterPlugin, MethodCallHandle
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
   /// when the Flutter Engine is detached from the Activity
   private MethodChannel channel;
+  private Activity activity;
 
   @Override
   public void onAttachedToActivity(ActivityPluginBinding binding) {
